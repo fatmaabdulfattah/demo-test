@@ -1,16 +1,16 @@
 from fastapi import FastAPI
 
-app = FastAP
+app = FastAPI()
 
-@.get("/health")
- health()
+@app.get("/health")
+def health():
     data = {"status": "ok"}
     return data
 
-@.get("/")
- root()
+@app.get("/")
+def root():
     return {"message": "Hello"}
 
 if __name__ == "__main__":
-    import uvicornn
+    import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
