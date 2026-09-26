@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAP
 
-@app.get("/health")
-def health():
+@.get("/health")
+ health()
     data = {"status": "ok"}
     return data
 
